@@ -34,13 +34,9 @@ export default class IndexPage extends React.Component {
           {posts
             .filter(post => post.node.frontmatter.templateKey === "blog-post")
             .map(({ node: post }) => (
-              <div
-                className="content"
-                style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
-                key={post.id}
-              >
+              <div className="content box" key={post.id}>
                 <p>
-                  <Link className="has-text-primary" to={post.frontmatter.path}>
+                  <Link to={post.frontmatter.path}>
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
