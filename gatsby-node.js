@@ -39,9 +39,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           `src/templates/${String(node.frontmatter.templateKey)}.js`
         ),
         // additional data can be passed via context
-        context: {
-          path: pagePath
-        }
+        context: {}
       });
     });
   });
