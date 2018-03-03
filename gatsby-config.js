@@ -6,6 +6,13 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-PJGGBZF",
+        includeInDevelopment: false
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
@@ -24,7 +31,15 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        plugins: []
+        plugins: [
+          "gatsby-plugin-sharp",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 800
+            }
+          }
+        ]
       }
     },
     {
