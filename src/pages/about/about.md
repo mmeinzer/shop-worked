@@ -3,6 +3,7 @@ templateKey: 'about-page'
 path: /about
 title: About Shop Worked
 date: 2016-12-17T15:04:12.000Z
+description: An about page.
 ---
 
 You spend a lot of time on your craft. And when it comes to the right tools, you probably want the best one for the job. That's where Shop Worked comes in.
